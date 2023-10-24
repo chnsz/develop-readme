@@ -30,7 +30,7 @@ git config --global core.autocrlf false
 
 ```bash
 sudo apt update
-sudp apt install -y gcc
+sudo apt install -y gcc
 ```
 
 
