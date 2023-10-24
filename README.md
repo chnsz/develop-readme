@@ -16,7 +16,7 @@
 | IDEA     | 2021.2.2 | D:\Program Files\JetBrains\IntelliJ IDEA 2021.2.2 |
 | Slack    |          | 即时沟通软件，用在开发机发生消息和文件            |
 | Terraform  |   1.5.7    | C:\Windows\System32\terraform.exe (免安装) |
-| outlook  |   2021    | 邮件客户端 |
+| outlook  |   2021    | 邮件客户端(如未安装，可以到下载目录中安装) |
 
 ### Chrome 浏览器插件
 1. 安装了一个“篡改猴（油猴插件）”，内部加载了2个插件：
