@@ -1,5 +1,40 @@
 
-## 1. go install 报错 
+## 1. 将代理域名改为IP地址 [必须]
+执行如下命令替换：
+```bash
+sudo sed -i 's/proxy.dev.intranet/192.168.0.66/g' /etc/profile
+source /etc/profile
+```
+
+## 2. 为Git配置代理 [必须]
+git 客户端默认不走系统的代理，需要单独配置
+
+```bash
+git config --global http.proxy http://192.168.0.66:9090
+git config --global https.proxy https://192.168.0.66:9090
+```
+
+分别在window和wsl中都执行。
+
+## 3. 禁用Git换行符转换 [必须]
+
+自动转行换行符可能会导致代码运行问题，建议关闭。
+分别在window和wsl中执行如下命令：
+```bash
+git config --global core.autocrlf false
+```
+
+## 4. 安装gcc [必须]
+
+在运行单元测试或者构建项目时，以来gcc插件，请执行如下命令安装：
+
+```bash
+sudo apt update
+sudp apt install -y gcc
+```
+
+
+## 5. go install 报错 
 
 本案例主要在wsl环境下，在执行go install或者运行静态检查的时候，出现如下错误：
 
@@ -54,30 +89,3 @@ http_proxy=http://192.168.0.66:9090
 ```
 
 能够看到http_proxy、https_proxy对应的地址即可。
-
-## 2. 为Git配置代理 [必须]
-git 客户端默认不走系统的代理，需要单独配置
-
-```bash
-git config --global http.proxy http://192.168.0.66:9090
-git config --global https.proxy https://192.168.0.66:9090
-```
-
-分别在window和wsl中都执行。
-
-## 3. 禁用Git换行符转换 [必须]
-
-自动转行换行符可能会导致代码运行问题，建议关闭。
-分别在window和wsl中执行如下命令：
-```bash
-git config --global core.autocrlf false
-```
-
-## 4. 安装gcc [必须]
-
-在运行单元测试或者构建项目时，以来gcc插件，请执行如下命令安装：
-
-```bash
-sudo apt update
-sudp apt install -y gcc
-```
