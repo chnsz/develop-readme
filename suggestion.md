@@ -73,7 +73,7 @@ git config --global https.proxy https://192.168.0.66:9090
 git config --global core.autocrlf false
 ```
 
-## 安装gcc [必须]
+## 4. 安装gcc [必须]
 
 在运行单元测试或者构建项目时，以来gcc插件，请执行如下命令安装：
 
