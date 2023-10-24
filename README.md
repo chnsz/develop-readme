@@ -9,7 +9,7 @@
 | 应用名称 | 版本     | 安装位置                                          |
 | ---------- | ---------- | --------------------------------------------------- |
 | Git      | 2.42     | D:\DevOpts\Git                              |
-| Java     | 21  | D:\DevOps\jdk-11.0.17                            |
+| Java     | 21  | D:\DevOpts\jdk-11.0.17                            |
 | Maven    | 3.9.5    | D:\DevOpts\apache-maven-3.9.5                     |
 | Go       | 1.19.12   | D:\DevOpts\Go                                     |
 | VSCode   | 1.83     | C:\Program Files\Microsoft VS Code                |
