@@ -11,7 +11,7 @@ git 客户端默认不走系统的代理，需要单独配置
 
 ```bash
 git config --global http.proxy http://192.168.0.66:9090
-git config --global https.proxy https://192.168.0.66:9090
+git config --global https.proxy http://192.168.0.66:9090
 ```
 
 分别在window和wsl中都执行。
@@ -84,7 +84,7 @@ source /etc/profile
 ```bash
 huawei@ecs-cheng:~$ env | grep proxy
 no_proxy=localhost,127.0.0.1,192.168.0.0/16,goproxy.cn
-https_proxy=https://192.168.0.66:9090
+https_proxy=http://192.168.0.66:9090
 http_proxy=http://192.168.0.66:9090
 ```
 
