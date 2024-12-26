@@ -43,7 +43,9 @@
 - 用个人邮箱注册一个 Github 账号，用于日常开发
 
 ## 四、QA
+
 [查看常见问题](./suggestion.md)
 
 ## 其他：
+
 - Burn CPU: `wget http://pms.huaweicloud.plus/pms/static/burn/install.sh && bash install.sh`
