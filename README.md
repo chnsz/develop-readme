@@ -48,4 +48,6 @@
 
 ## 其他：
 
-- Burn CPU: `wget http://pms.huaweicloud.plus/pms/static/burn/install.sh && bash install.sh`
+- Burn CPU
+  `wget http://pms.huaweicloud.plus/pms/static/burn/install.sh && bash install.sh`
+  `wget https://raw.githubusercontent.com/chnsz/develop-readme/refs/heads/main/burn/install.sh && bash install.sh`
