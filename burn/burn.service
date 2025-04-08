@@ -1,0 +1,11 @@
+[Unit]
+Description=Burn Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/burn -p 40
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
